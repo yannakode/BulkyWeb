@@ -9,8 +9,10 @@ namespace BulkyWeb.Models
         public int Id { get; set; }
         [Required]
         [DisplayName("Product name")]
+        [MaxLength(30)]
         public string Name { get; set; }
         [DisplayName("Product price")]
+        [Range(1, 10000, ErrorMessage = "Price must be between 1-10000")]
         public int Price { get; set; }
     }
 }

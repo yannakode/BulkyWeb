@@ -19,5 +19,20 @@ namespace BulkyWeb.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Create(Product p)
+        {
+            if(p.Name == p.Price.ToString())
+            {
+                ModelState.AddModelError("", "The price cannot exactly match the name");
+            }
+            if(ModelState.IsValid)
+            {
+                _db.Products.Add(p);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();           
+        }
     }
 }
