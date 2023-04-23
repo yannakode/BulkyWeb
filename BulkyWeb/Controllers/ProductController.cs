@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using BulkyWeb.Date;
+﻿using BulkyWeb.Date;
 using BulkyWeb.Models;
+using Microsoft.AspNetCore.Mvc;
 namespace BulkyWeb.Controllers
 {
     public class ProductController : Controller
@@ -14,6 +14,10 @@ namespace BulkyWeb.Controllers
         {
             List<Product> objProductList = _db.Products.ToList();
             return View(objProductList);
+        }
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }

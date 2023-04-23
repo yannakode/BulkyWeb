@@ -1,12 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using BulkyWeb.Models;
+﻿using BulkyWeb.Models;
+using Microsoft.EntityFrameworkCore;
 namespace BulkyWeb.Date
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
+
         }
         public DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
