@@ -32,6 +32,7 @@ namespace BulkyWeb.Controllers
             {
                 _db.Products.Add(p);
                 _db.SaveChanges();
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             return View();           
@@ -56,6 +57,7 @@ namespace BulkyWeb.Controllers
             {
                 _db.Products.Update(p);
                 _db.SaveChanges();
+                TempData["success"] = "Product has been edited";
                 return RedirectToAction("Index");
             }
             return View();
@@ -84,6 +86,7 @@ namespace BulkyWeb.Controllers
             }
             _db.Products.Remove(productObj);
             _db.SaveChanges();
+            TempData["success"] = "Product has been deleted";
             return RedirectToAction("Index");
         }
     }
