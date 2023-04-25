@@ -12,7 +12,7 @@
             </a>
         </div>
     </div>
-    <table class="table table-bordered table-striped">
+    <table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -23,7 +23,8 @@
             </th>
             <th>
                 Preço
-            </th>           
+            </th>     
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -33,6 +34,16 @@
              <td>@obj.Id</td>
             <td>@obj.Name</td>
             <td>@obj.Price</td>
+            <td class="last-td">
+                <div class="w-75 btn-group" role="group">
+                    <a asp-controller="Product" asp-action="Edit" asp-route-Id="@obj.Id" class="btn btn-primary mx-2">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a asp-controller="Product" asp-action="Delete" asp-route-Id="@obj.Id" class="btn btn-danger mx-2">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </div>
+            </td>
         </tr>
         }
         

@@ -1,6 +1,8 @@
 ﻿using BulkyWeb.Date;
 using BulkyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 namespace BulkyWeb.Controllers
 {
     public class ProductController : Controller
@@ -33,6 +35,56 @@ namespace BulkyWeb.Controllers
                 return RedirectToAction("Index");
             }
             return View();           
+        }
+        public IActionResult Edit(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            Product? productFromDb = _db.Products.Find(id);
+            if (productFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(productFromDb);
+        }
+        [HttpPost]
+        public IActionResult Edit(Product p)
+        {           
+            if (ModelState.IsValid)
+            {
+                _db.Products.Update(p);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+   
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            Product? productFromDb = _db.Products.Find(id);
+            if (productFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(productFromDb);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeletePOST(int? id)
+        {           
+            Product? productObj = _db.Products.Find(id);
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            _db.Products.Remove(productObj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
