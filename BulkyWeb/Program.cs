@@ -1,4 +1,4 @@
-using BulkyWeb.Date;
+using Bulky.DataAccess.Date;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Privacy}/{id?}");
+    pattern: "{controller=Home}/{action=index}/{id?}");
 
 app.Run();

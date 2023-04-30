@@ -1,7 +1,6 @@
-﻿using BulkyWeb.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using Bulky.Models;
 namespace BulkyWeb.Controllers
 {
     public class HomeController : Controller
@@ -15,7 +14,7 @@ namespace BulkyWeb.Controllers
 
         public IActionResult Index()
         {
-            return View("Privacy");
+            return View();
         }
 
         public IActionResult Privacy()

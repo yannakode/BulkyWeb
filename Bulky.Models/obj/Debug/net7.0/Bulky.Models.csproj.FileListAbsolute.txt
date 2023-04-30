@@ -1,0 +1,12 @@
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\bin\Debug\net7.0\Bulky.Models.deps.json
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\bin\Debug\net7.0\Bulky.Models.dll
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\bin\Debug\net7.0\Bulky.Models.pdb
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.csproj.AssemblyReference.cache
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.AssemblyInfoInputs.cache
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.AssemblyInfo.cs
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.csproj.CoreCompileInputs.cache
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.dll
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\refint\Bulky.Models.dll
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\Bulky.Models.pdb
+C:\Users\yanna\OneDrive\Documentos\c#\testes crud\youtube english course asp net\BulkyWeb\Bulky.Models\obj\Debug\net7.0\ref\Bulky.Models.dll

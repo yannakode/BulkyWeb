@@ -1,9 +1,11 @@
-﻿using BulkyWeb.Date;
-using BulkyWeb.Models;
+﻿using Bulky.DataAccess.Date;
+using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace BulkyWeb.Controllers
+namespace Bulky.DataAccess.Date
 {
     public class ProductController : Controller
     {
@@ -24,11 +26,14 @@ namespace BulkyWeb.Controllers
         [HttpPost]
         public IActionResult Create(Product p)
         {
-            if(p.Name == p.Price.ToString())
+            if (p.Name != p.Price.ToString())
+            {
+            }
+            else
             {
                 ModelState.AddModelError("", "The price cannot exactly match the name");
             }
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _db.Products.Add(p);
                 _db.SaveChanges();
