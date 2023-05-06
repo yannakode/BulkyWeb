@@ -1,22 +1,19 @@
-﻿using Bulky.DataAccess.Date;
+﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections;
-using System.Collections.Generic;
 
-namespace Bulky.DataAccess.Date
+namespace Bulky.DataAccess.Migrations
 {
     public class ProductController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public ProductController(ApplicationDbContext db)
+        private readonly IUnitOfWork _unitOfWork;
+        public ProductController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            List<Product> objProductList = _db.Products.ToList();
+            List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
             return View(objProductList);
         }
         public IActionResult Create()
@@ -26,17 +23,10 @@ namespace Bulky.DataAccess.Date
         [HttpPost]
         public IActionResult Create(Product p)
         {
-            if (p.Name != p.Price.ToString())
-            {
-            }
-            else
-            {
-                ModelState.AddModelError("", "The price cannot exactly match the name");
-            }
             if (ModelState.IsValid)
             {
-                _db.Products.Add(p);
-                _db.SaveChanges();
+                _unitOfWork.Product.Add(p);
+                _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
@@ -48,7 +38,7 @@ namespace Bulky.DataAccess.Date
             {
                 return NotFound();
             }
-            Product? productFromDb = _db.Products.Find(id);
+            Product? productFromDb = _unitOfWork.Product.Get(u=>u.Id == id);
             if (productFromDb == null)
             {
                 return NotFound();
@@ -60,8 +50,8 @@ namespace Bulky.DataAccess.Date
         {           
             if (ModelState.IsValid)
             {
-                _db.Products.Update(p);
-                _db.SaveChanges();
+                _unitOfWork.Product.Update(p);
+                _unitOfWork.Save();
                 TempData["success"] = "Product has been edited";
                 return RedirectToAction("Index");
             }
@@ -74,7 +64,7 @@ namespace Bulky.DataAccess.Date
             {
                 return NotFound();
             }
-            Product? productFromDb = _db.Products.Find(id);
+            Product? productFromDb = _unitOfWork.Product.Get(u => u.Id == id);
             if (productFromDb == null)
             {
                 return NotFound();
@@ -84,13 +74,13 @@ namespace Bulky.DataAccess.Date
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {           
-            Product? productObj = _db.Products.Find(id);
+            Product? productObj = _unitOfWork.Product.Get(u => u.Id == id);
             if (id == null || id == 0)
             {
                 return NotFound();
             }
-            _db.Products.Remove(productObj);
-            _db.SaveChanges();
+            _unitOfWork.Product.Remove(productObj);
+            _unitOfWork.Save();
             TempData["success"] = "Product has been deleted";
             return RedirectToAction("Index");
         }
