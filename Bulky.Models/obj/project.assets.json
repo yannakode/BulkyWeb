@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
+      "projectUniqueName": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
       "projectName": "Bulky.Models",
-      "projectPath": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
+      "projectPath": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
       "packagesPath": "C:\\Users\\yanna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\Bulky.Models\\obj\\",
+      "outputPath": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\Bulky.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

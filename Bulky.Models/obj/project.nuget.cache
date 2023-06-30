@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8cd20MqapngLThnU2HoiTB1maTkGDJa6onwT7h/4aJmaazNKaNy943ryj8gv0H5YgvLsGaj2UJYvngaLzLlxA==",
+  "dgSpecHash": "jBqQ7dterA4YdKQTtDIiKHQ+JvrFTY1WC0fAxEDRilfXjyFS31cWYOB5ULyAg7x4sytvT0P24UR0KO3KHjcmKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
+  "projectFilePath": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\Bulky.Models\\Bulky.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K3/EtDKQUszB95LegbiA3yAFDuCZyc1YjIax/GWC4nhbpmZtM3NyT5USKSMa+tnUhQHYaXuI+6aC5o+SDFLFGQ==",
+  "dgSpecHash": "xfkHV5RNf+fGT0cc4QAfwIAiOIF/JyMW4pj+2qk98UkmbVUu7jTbvPuWR2xIaJs+4drh6HOebBy4lvvzAJ4M2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\BulkyWeb\\BulkyWeb.csproj",
+  "projectFilePath": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\BulkyWeb\\BulkyWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yanna\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\yanna\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

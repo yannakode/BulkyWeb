@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bVpn/uAbNF+r04J8hc0H3T6DEd+JxLURkywT5wExs/EFMk3lBgoOOfVU2fUHeTj6eALYoNyNDoU1N9eY46Y/rQ==",
+  "dgSpecHash": "KkOPJDRbTn84jNjKiREJ7TLopoZC+2ssG23joUtJ0G+qbbrDUbIFNqPwmN4DjTHORR4sE3bZiexTF4Z6UXtjLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yanna\\OneDrive\\Documentos\\c#\\testes crud\\youtube english course asp net\\BulkyWeb\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\yanna\\Source\\Repos\\BulkyWeb\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yanna\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\yanna\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
